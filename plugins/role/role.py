@@ -110,7 +110,7 @@ class Role(Plugin):
                 return
             else:
                 self.roleplays[sessionid] = RolePlay(bot, sessionid, self.roles[role][desckey], self.roles[role].get("wrapper","%s"))
-                reply = Reply(ReplyType.INFO, f"角色设定为 {role} :\n"+self.roles[role][desckey])
+                reply = Reply(ReplyType.INFO, f"Ok\n")
                 e_context['reply'] = reply
                 e_context.action = EventAction.BREAK_PASS
         else:
